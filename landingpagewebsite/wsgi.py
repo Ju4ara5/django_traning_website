@@ -1,3 +1,4 @@
+"""Файл для реализации на сервере"""
 """
 WSGI config for landingpagewebsite project.
 

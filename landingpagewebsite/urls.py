@@ -1,3 +1,9 @@
+"""Этот файл отвечает за маршрутизацию запросов (файл URL-привязок),
+   прописываются пути к нашим функциям вызова (пути к функциям views),
+   'когда запрос поступает на определённый адрес, этот файл (urls.py) обрабатывает данный запрос
+   и переключать данный запрос на нужную вьюху'
+"""
+
 """landingpagewebsite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

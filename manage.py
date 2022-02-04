@@ -1,4 +1,13 @@
-#!/usr/bin/env python
+"""Этот файл, менеджер проекта.
+   С помошью этого файла стартуют проект.
+   Так же можно:
+   вносить изминения,
+   создавать суперадмина,
+   производить миграции
+   и т.д.
+   """
+
+# !/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
 import sys

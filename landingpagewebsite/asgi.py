@@ -1,3 +1,4 @@
+"""Файл для реализации на сервере"""
 """
 ASGI config for landingpagewebsite project.
 
