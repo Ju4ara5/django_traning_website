@@ -14,13 +14,12 @@ class Order(models.Model):
     order_name = models.CharField(max_length=200, verbose_name='Имя')
     order_phone = models.CharField(max_length=200, verbose_name='Телефон')
 
-# метод строкового представления обекта данных:
+    # метод строкового представления обекта данных:
     def __str__(self):
         return self.order_name
 
-
-# переводитм order и orders на русский. добавлением субкласса мета,
-# с указанием verbose_name= в единственном числе и verbose_name_plural= во множественном:
+    # переводитм order и orders на русский. добавлением субкласса мета,
+    # с указанием verbose_name= в единственном числе и verbose_name_plural= во множественном:
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
