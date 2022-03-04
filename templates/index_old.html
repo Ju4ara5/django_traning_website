@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Ju4ara5</title>
+</head>
+<body>
+<h3>Начало олд индекса</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<form action="{% url 'thanks_page' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">ОТПРАВИТЬ</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% if object_list %}
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>Дата</th>
+        <th>Имя</th>
+        <th>Телефон</th>
+    </tr>
+    {% for obj in object_list %}
+    <tr>
+        <th>{{ obj.id }}</th>
+        <th>{{ obj.order_dt }}</th>
+        <th>{{ obj.order_name }}</th>
+        <th>{{ obj.order_phone }}</th>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+Данных нет
+{% endif %}
+<h3>Конец олд индекса</h3>
+</body>
+</html>
