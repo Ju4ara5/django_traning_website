@@ -5,8 +5,9 @@
     <title>Благодарчик</title>
 </head>
 <body>
+{% load static %}
 
 <h1>{{ name }}, Спасибо за отправку! {{ phone }}</h1>
-
+<img src="{% static 'img\2.jpg' %}" height="400">
 </body>
 </html>
