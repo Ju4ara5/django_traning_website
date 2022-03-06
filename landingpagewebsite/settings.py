@@ -121,11 +121,13 @@ STATICFILES_DIRS = [
     BASE_DIR / "landingpagewebsite/static/",
 ]
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static/img/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = 'static/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+#MADIA_URL = 'static/img/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
