@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition (список установленных приложений)
 
 INSTALLED_APPS = [
+    'cms.apps.CmsConfig',
     'crm.apps.CrmConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,8 +125,8 @@ STATICFILES_DIRS = [
 STATIC_URL = 'static/img/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-#MADIA_URL = 'static/img/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+MADIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
